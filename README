@@ -1,0 +1,13 @@
+UTILISER LES COLLECTIVES NUMPY AVEC DES MAJUSCULES SINON ZERO (0/20)
+
+exemples :
+
+ - Bcast (Broadcast) : envoie un tableau NumPy d'un processus maître à tous les autres processus.
+ - Scatter : découpe un tableau NumPy en plusieurs morceaux et en distribue une partie à chaque processus.
+ - Gather : fait l'inverse de Scatter ; rassemble les morceaux de tableaux disséminés sur chaque processus pour former un seul grand tableau sur le maître.
+ - Allgather : rassemble les morceaux de chaque processus et distribue le tableau complet final à tous les processus.
+ - Reduce : applique une opération de réduction (somme, minimum, maximum, etc.) sur les tableaux de tous les processus et envoie le résultat final au maître.
+ - Allreduce : applique une réduction et distribue le résultat à tous les processus.
+
+
+
