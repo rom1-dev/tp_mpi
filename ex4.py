@@ -15,7 +15,7 @@ b = (rank+1)*(nb//size)
 
 local_res = cumul(a,b)
 
-global_res = comm.reduce(local_res, op=MPI.SUM, root=0)
+global_res = comm.Reduce(local_res, op=MPI.SUM, root=0)
 
 if rank==0:
     print(f"global result : {global_res}")
